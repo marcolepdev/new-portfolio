@@ -69,70 +69,53 @@ main {
     text-align: left;
 }
 .projects-section {
-    width: 100%; /* Full width */
-    max-width: 1200px; /* Limit width for larger screens */
-    margin: 0 auto; /* Center the section */
+    max-width: 1200px; /* Limita la larghezza per schermi più grandi */
+    margin: 0 auto; /* Centra la sezione */
     padding: 20px;
 }
 
 .project-container {
-    display: flex; /* Use flexbox */
-    flex-direction: row; /* Arrange items in a row */
-    align-items: center; /* Center items vertically */
-    height: 400px; /* Fixed height for the project container */
-    margin-bottom: 20px; /* Space between project containers */
-    overflow: hidden; /* Prevent overflow */
-    border-bottom: 1px solid #fff;
+    display: flex; /* Usa flexbox */
+    flex-direction: row; /* Disponi gli elementi in orizzontale */
+    height: 200px; /* Altezza fissa per ogni progetto */
+    margin-bottom: 20px; /* Spazio tra i progetti */
+    overflow: hidden; /* Nascondi il contenuto in eccesso */
+    border: 1px solid #fff; /* Bordo bianco attorno a ogni progetto */
+    border-radius: 8px; /* Angoli arrotondati */
 }
 
 .project-image {
-    flex: 1; /* Take equal space */
-    max-height: 100%; /* Allow image to take full height */
-    width: 100%; /* Full width to prevent zooming */
-    object-fit: contain; /* Ensure images fit within their container without being cropped */
-    height: auto; /* Maintain aspect ratio */
+    flex: 1; /* Prendi spazio uguale */
+    max-width: 100%; /* Assicurati che non superi il contenitore */
+    height: auto; /* Mantieni le proporzioni */
+    object-fit: cover; /* Copri l'area senza deformare */
 }
-
 
 .project-description {
-    flex: 2; /* Take more space than image */
-    padding-left: 40px; /* Add padding around text */
+    flex: 2; /* Prendi più spazio rispetto all'immagine */
+    padding: 10px; /* Padding interno */
 }
-.project-description p {
-    margin-top: 10px;
+
+.project-description h3 {
+    margin-bottom: 5px; /* Spazio sotto il titolo */
 }
 
 .project-buttons {
-    margin-top: 30px; /* Space above buttons */
+    margin-top: 10px; /* Spazio sopra i pulsanti */
 }
 
 .project-buttons a {
-    margin-right: 10px; /* Space between buttons */
-    text-decoration: none; /* Remove underline */
-    color: #fff; /* White text color */
-    background-color: #000; /* Button background color */
-    padding: 8px 12px; /* Button padding */
-    border-radius: 4px; /* Rounded corners for buttons */
-    border:1px solid #fff;
+    margin-right: 10px; /* Spazio tra i pulsanti */
+    text-decoration: none; /* Rimuovi sottolineatura */
+    color: #fff; /* Colore del testo */
+    background-color: #007bff; /* Colore di sfondo */
+    padding: 8px 12px; /* Padding per i pulsanti */
+    border-radius: 4px; /* Angoli arrotondati */
 }
+
 .project-buttons a:hover {
-    margin-right: 10px; /* Space between buttons */
-    text-decoration: none; /* Remove underline */
-    color: #000; /* White text color */
-    background-color: #fff; /* Button background color */
-    padding: 8px 12px; /* Button padding */
-    border-radius: 4px; /* Rounded corners for buttons */
-    border:1px solid #000;
+    background-color: #0056b3; /* Colore di sfondo al passaggio del mouse */
 }
-
-
-
-
-#css-projects{
-    position: relative;
-    top:10px;
-}
-
 
 
 
@@ -194,20 +177,19 @@ footer a{
 
 
 /* Responsive Styles */
-    .project-container {
-        flex-direction: column; /* Stack elements vertically on mobile */
-        height: auto; /* Allow height to adjust based on content */
-    }
+.project-container {
+    flex-direction: column; /* Disponi verticalmente su dispositivi più piccoli */
+    height: auto; /* Permetti all'altezza di adattarsi */
+}
 
-    .project-image {
-        width: 100%; /* Full width for images */
-        max-height: 200px; /* Limit height to maintain aspect ratio */
-    }
+.project-image {
+    width: 100%; /* Larghezza totale per immagini su mobile */
+    max-height: 150px; /* Limita l'altezza per immagini su mobile */
+}
 
-    .project-description {
-        text-align: center; /* Center text on mobile */
-        height:300px;
-    }
+.project-description {
+    text-align: center; /* Centra il testo su mobile */
+}
 
     .project-buttons{
         margin-right: 10px; /* Space between buttons */
