@@ -91,7 +91,7 @@ box-shadow: -1px 10px 41px -15px rgba(0,0,0,0.75);
 .project-image {
     flex: 1; /* Take equal space */
     max-height: 60%; /* Responsive image */
-    object-fit: cover; /* Cover the container */
+    object-fit: contain; /* Cover the container */
 
 }
 
