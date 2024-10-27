@@ -74,6 +74,11 @@ main {
 #web{
     text-align: left;
 }
+
+.img-container{
+    width:400px;
+    height:400px;
+} 
 .projects-section {
     width:1100px; /* Limita la larghezza per schermi più grandi */
     margin: 0 auto; /* Centra la sezione */
@@ -91,7 +96,7 @@ main {
     margin-top: 30px;
 }
 
-.project-image {
+img {
     flex: 1; /* Prendi spazio uguale */
     max-width: 100%; /* Assicurati che non superi il contenitore */
     height: auto; /* Mantieni le proporzioni */
@@ -214,11 +219,10 @@ footer a{
         margin-bottom: 30px;
         padding: 10px;
     }
-
-    .project-image {
+    img {
         width: 100%;
         max-height: 150px;
-        object-fit: cntain;
+        object-fit: contain;
         margin-bottom: 15px;
     }
 
@@ -239,6 +243,11 @@ footer a{
 @media (max-width: 480px) {
     .project-image {
         max-height: 120px;
+    }
+
+    .img-container{
+        width:200px;
+        height:200px;
     }
 
     .project-description h3 {
