@@ -83,17 +83,16 @@ main {
     margin-bottom: 20px; /* Space between project containers */
     overflow: hidden; /* Prevent overflow */
     border-bottom: 1px solid #fff;
-    -webkit-box-shadow: -1px 10px 41px -15px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 10px 41px -15px rgba(0,0,0,0.75);
-box-shadow: -1px 10px 41px -15px rgba(0,0,0,0.75);
 }
 
 .project-image {
     flex: 1; /* Take equal space */
-    max-height: 60%; /* Responsive image */
-    object-fit: contain; /* Cover the container */
-
+    max-height: 100%; /* Allow image to take full height */
+    width: 100%; /* Full width to prevent zooming */
+    object-fit: contain; /* Ensure images fit within their container without being cropped */
+    height: auto; /* Maintain aspect ratio */
 }
+
 
 .project-description {
     flex: 2; /* Take more space than image */
