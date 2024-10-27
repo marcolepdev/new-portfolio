@@ -207,7 +207,20 @@ footer a{
 
     .project-description {
         text-align: center; /* Center text on mobile */
+        height:300px;
     }
+
+    .project-buttons{
+        margin-right: 10px; /* Space between buttons */
+        text-decoration: none; /* Remove underline */
+        color: #fff; /* White text color */
+        background-color: #000; /* Button background color */
+        padding: 8px 12px; /* Button padding */
+        border-radius: 4px; /* Rounded corners for buttons */
+    
+        margin-bottom: 15px;
+    }
+
 }
 
 
