@@ -87,16 +87,10 @@ main {
 
 .project-image {
     flex: 1; /* Take equal space */
-<<<<<<< Updated upstream
     max-height: 100%; /* Allow image to take full height */
     width: 100%; /* Full width to prevent zooming */
     object-fit: contain; /* Ensure images fit within their container without being cropped */
     height: auto; /* Maintain aspect ratio */
-=======
-    max-height: 60%; /* Responsive image */
-    object-fit: contain; /* Cover the container */
-
->>>>>>> Stashed changes
 }
 
 
