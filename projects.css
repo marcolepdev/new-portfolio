@@ -170,7 +170,7 @@ footer a{
 .fa-heart{
     color: #ff0000;
 }
-/* Media Queries per dispositivi mobili */
+
 @media (max-width: 768px) {
     .side-menu {
         top: 0;
@@ -201,33 +201,63 @@ footer a{
         padding-top: 80px;
     }
 
+    .projects-section {
+        width: 100%;
+        padding: 10px;
+    }
 
-/* Responsive Styles */
-.project-container {
-    flex-direction: column; /* Disponi verticalmente su dispositivi più piccoli */
-    height: auto; /* Permetti all'altezza di adattarsi */
-}
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
 
-.project-image {
-    width: 100%; /* Larghezza totale per immagini su mobile */
-    max-height: 150px; /* Limita l'altezza per immagini su mobile */
-}
-
-.project-description {
-    text-align: center; /* Centra il testo su mobile */
-}
-
-    .project-buttons{
-        margin-right: 10px; /* Space between buttons */
-        text-decoration: none; /* Remove underline */
-        color: #fff; /* White text color */
-        background-color: #000; /* Button background color */
-        padding: 8px 12px; /* Button padding */
-        border-radius: 4px; /* Rounded corners for buttons */
-    
+    .project-image {
+        width: 100%;
+        max-height: 150px;
+        object-fit: cntain;
         margin-bottom: 15px;
     }
 
+    .project-description {
+        text-align: center;
+        padding: 0;
+    }
+
+    .project-buttons a {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Media Queries per dispositivi ancora più piccoli (max 480px) */
+@media (max-width: 480px) {
+    .project-image {
+        max-height: 120px;
+    }
+
+    .project-description h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-buttons a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .project-container2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
 }
 
 
