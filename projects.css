@@ -7,8 +7,7 @@
 
 body {
     font-family: Lato;
-    background: url('./assets/desk.jpg') no-repeat center center/cover;
-    background-color: #1a1a1a;
+    background-color: #000;
     color: #fff;
 }
 
@@ -67,59 +66,76 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
-h2{
-    margin-bottom: 60px;
-}
-.projects-list, .css-projects {
-    margin: 50px 0;
-}
-
-.project-thumbnails {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    background-color: rgba(0,0,0,0.3);
+.projects-section {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
 }
 
-.thumbnail {
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-}
-.thumbnail a{
-    text-decoration: none;
-}
-
-.thumbnail img {
-    width: 100%;
-}
-.thumbnail p{
-    margin:10px 0 15px 0;
+.project-container {
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Center items vertically */
+    height: 400px; /* Fixed height for the project container */
+    margin-bottom: 20px; /* Space between project containers */
+    overflow: hidden; /* Prevent overflow */
+    border-bottom: 1px solid #fff;
+    -webkit-box-shadow: -1px 10px 41px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 41px -15px rgba(0,0,0,0.75);
+box-shadow: -1px 10px 41px -15px rgba(0,0,0,0.75);
 }
 
-img{
-    width:150px;
-    height:150px;
-    object-fit: contain;
-padding: 10px;
+.project-image {
+    flex: 1; /* Take equal space */
+    max-height: 60%; /* Responsive image */
+    object-fit: cover; /* Cover the container */
+
 }
 
-.github-link, .live-link {
-    color: #fff;
-    margin: 10px;
-    padding: 8px;
-    display: inline-block;
+.project-description {
+    flex: 2; /* Take more space than image */
+    padding-left: 40px; /* Add padding around text */
 }
-.github-link:hover, .live-link:hover {
-    color: #ff0000;
-    margin: 10px;
-    padding: 8px;
-    display: inline-block;
+.project-description p {
+    margin-top: 10px;
 }
+
+.project-buttons {
+    margin-top: 30px; /* Space above buttons */
+}
+
+.project-buttons a {
+    margin-right: 10px; /* Space between buttons */
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text color */
+    background-color: #000; /* Button background color */
+    padding: 8px 12px; /* Button padding */
+    border-radius: 4px; /* Rounded corners for buttons */
+    border:1px solid #fff;
+}
+.project-buttons a:hover {
+    margin-right: 10px; /* Space between buttons */
+    text-decoration: none; /* Remove underline */
+    color: #000; /* White text color */
+    background-color: #fff; /* Button background color */
+    padding: 8px 12px; /* Button padding */
+    border-radius: 4px; /* Rounded corners for buttons */
+    border:1px solid #000;
+}
+
+
+
+
+#css-projects{
+    position: relative;
+    top:10px;
+}
+
+
+
 
 ::-webkit-scrollbar{
     width:18px;
@@ -177,18 +193,34 @@ footer a{
         padding-top: 80px;
     }
 
-    .project-thumbnails {
-        flex-direction: column;
-        align-items: center;
+
+/* Responsive Styles */
+    .project-container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        height: auto; /* Allow height to adjust based on content */
     }
 
-    .thumbnail {
-        width: 90%;
-<<<<<<< HEAD
+    .project-image {
+        width: 100%; /* Full width for images */
+        max-height: 200px; /* Limit height to maintain aspect ratio */
     }
-    footer {
-        font-size: 18px;
-=======
->>>>>>> parent of 70b6a4c (update project section)
+
+    .project-description {
+        text-align: center; /* Center text on mobile */
+        height:300px;
     }
+
+    .project-buttons{
+        margin-right: 10px; /* Space between buttons */
+        text-decoration: none; /* Remove underline */
+        color: #fff; /* White text color */
+        background-color: #000; /* Button background color */
+        padding: 8px 12px; /* Button padding */
+        border-radius: 4px; /* Rounded corners for buttons */
+    
+        margin-bottom: 15px;
+    }
+
 }
+
+
