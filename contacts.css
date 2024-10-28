@@ -119,7 +119,6 @@ footer a{
     color: #ff0000;
 }
 
-/* Media Queries per dispositivi mobili */
 @media (max-width: 768px) {
     .side-menu {
         top: 0;
