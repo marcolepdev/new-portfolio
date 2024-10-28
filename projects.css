@@ -67,7 +67,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 1200px; /* Limita la larghezza per schermi più grandi */
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
@@ -80,58 +80,58 @@ main {
     height:400px;
 } 
 .projects-section {
-    width:1100px; /* Limita la larghezza per schermi più grandi */
-    margin: 0 auto; /* Centra la sezione */
+    width:1100px;
+    margin: 0 auto; 
     padding: 20px;
 
 }
 
 .project-container {
-    display: flex; /* Usa flexbox */
-    flex-direction: row; /* Disponi gli elementi in orizzontale */
-    height: 200px; /* Altezza fissa per ogni progetto */
-    margin-bottom: 20px; /* Spazio tra i progetti */
-    overflow: hidden; /* Nascondi il contenuto in eccesso */
-    border-bottom: 1px solid #fff; /* Bordo bianco attorno a ogni progetto */
+    display: flex; 
+    flex-direction: row; 
+    height: 200px; 
+    margin-bottom: 20px;
+    overflow: hidden; 
+    border-bottom: 1px solid #fff; 
     margin-top: 30px;
 }
 
 img {
-    flex: 1; /* Prendi spazio uguale */
-    max-width: 100%; /* Assicurati che non superi il contenitore */
-    height: auto; /* Mantieni le proporzioni */
-    object-fit:contain; /* Copri l'area senza deformare */
+    flex: 1; 
+    max-width: 100%; 
+    height: auto; 
+    object-fit:contain; 
     margin-bottom: 5px;
 }
 
 .project-description {
-    flex: 2; /* Prendi più spazio rispetto all'immagine */
-    padding: 10px; /* Padding interno */
+    flex: 2; 
+    padding: 10px; 
     text-align: left;
 }
 
 .project-description h3 {
-    margin-bottom: 5px; /* Spazio sotto il titolo */
+    margin-bottom: 5px; 
     text-align: left;
 }
 
 .project-buttons {
-    margin-top: 20px; /* Spazio sopra i pulsanti */
+    margin-top: 20px; 
 }
 
 .project-buttons a {
-    margin-right: 10px; /* Spazio tra i pulsanti */
-    text-decoration: none; /* Rimuovi sottolineatura */
-    color: #fff; /* Colore del testo */
-    background-color: #000; /* Colore di sfondo */
-    padding: 8px 12px; /* Padding per i pulsanti */
-    border-radius: 4px; /* Angoli arrotondati */
+    margin-right: 10px; 
+    text-decoration: none; 
+    color: #fff;
+    background-color: #000; 
+    padding: 8px 12px; 
+    border-radius: 4px; 
     border:1px solid #fff;
 }
 
 .project-buttons a:hover {
     background-color: #fff;
-    color:#000; /* Colore di sfondo al passaggio del mouse */
+    color:#000; 
 }
 
 
@@ -140,14 +140,13 @@ img {
 }
 
 .project-container2 {
-    display: flex; /* Usa flexbox */
-    flex-direction: row; /* Disponi gli elementi in orizzontale */
-    height: 200px; /* Altezza fissa per ogni progetto */
+    display: flex; 
+    flex-direction: row; 
+    height: 200px;
     margin-top: 40px;
-    margin-bottom: 20px; /* Spazio tra i progetti */
-    overflow: hidden; /* Nascondi il contenuto in eccesso */
-    border-bottom: 1px solid #fff; /* Bordo bianco attorno a ogni progetto */
-
+    margin-bottom: 20px; 
+    overflow: hidden; 
+    border-bottom: 1px solid #fff; 
 }
 
 ::-webkit-scrollbar{
@@ -239,7 +238,6 @@ footer a{
     }
 }
 
-/* Media Queries per dispositivi ancora più piccoli (max 480px) */
 @media (max-width: 480px) {
     .project-image {
         max-height: 120px;
