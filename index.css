@@ -122,7 +122,6 @@ footer a {
 }
 
 
-/* --- Media Query per mobile --- */
 @media (max-width: 768px) {
     .side-menu {
         top: 0;
@@ -157,7 +156,6 @@ footer a {
 
     main {
         padding-top: 80px;
-        /* Per evitare sovrapposizione del menu */
     }
 
     footer {
