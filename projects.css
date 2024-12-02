@@ -175,6 +175,10 @@ footer a{
     color: #ff0000;
 }
 
+p{
+    text-align: left;
+}
+
 @media (max-width: 768px) {
     .side-menu {
         top: 0;
